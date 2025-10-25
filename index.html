@@ -3,34 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Explorando o DOM</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+        extend: {}
+        }
+    }
+    </script>
 </head>
 <body>
 
-  <header id="cabecalho">
-    <h1 class="titulo-principal">Galeria de Imagens</h1>
+  <header id="cabecalho" class="bg-emerald-600 py-8 text-center text-white text-4xl font-bold italic">
+    <h1 class="titulo-principal">GALERIA DE IMAGENS</h1>
   </header>
 
-  <main>
+  <main class="p-8">
     <section class="grid-section">
-      <h2>Animais</h2>
-      <p>Fotos de animais selvagens.</p>
-      <img src="Elefante.webp" alt="Animal 1">
-      <img src="Tigre.webp" alt="Animal 2">
+      <h2 class="font-bold text-2xl text-emerald-600">Animais</h2>
+      <p class="text-zinc-600 pb-4">Fotos de animais selvagens.</p>
+      <div class="flex gap-4 flex-wrap">
+          <img src="Elefante.webp" alt="Animal 1" class="w-[400px] rounded">
+          <img src="Tigre.webp" alt="Animal 2" class="w-[400px] rounded">
+    </div>
     </section>
 
-    <section class="grid-section">
-      <h2>Paisagens</h2>
-      <p>Fotos de paisagens naturais.</p>
-      <img src="paisagem.jpg" alt="Paisagem 1">
+    <section class="grid-section pt-8">
+      <h2 class="font-bold text-2xl text-emerald-600">Paisagens</h2>
+      <p class="text-zinc-600 pb-4">Fotos de paisagens naturais.</p>
+      <img src="paisagem.jpg" alt="Paisagem 1" class="w-[400px] rounded">
     </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
+    <section id="contato" class="bg-emerald-600 p-4 w-[400px] mt-8 rounded text-white">
+      <h2 class="text-xl font-semibold">Contato</h2>
       <a href="mailto:contato@site.com">contato@site.com</a>
     </section>
   </main>
 
-  <footer>
+  <footer class="bg-emerald-600 text-center text-white py-8 text-2xl font-semibold italic">
     <p>Todos os direitos reservados.</p>
   </footer>
 
